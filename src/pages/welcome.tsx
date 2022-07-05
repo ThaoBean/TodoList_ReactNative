@@ -1,5 +1,5 @@
 import React from 'react';
-import {ImageBackground, StyleSheet, View} from 'react-native';
+import {Image, ImageBackground, StyleSheet, View} from 'react-native';
 import ButtonCustom from '../components/atoms/Button';
 import Typography from '../components/atoms/Title';
 
@@ -9,18 +9,33 @@ const WelcomePage: React.FC<IWelcomePage> = () => {
   return (
     <View style={styles.container}>
       <ImageBackground
-        source={{
-          uri: 'https://i.pinimg.com/564x/f7/99/55/f7995548892207406d6ba022aebc0948.jpg',
-        }}
+        source={require('../images/background_welcome.png')}
         resizeMode="cover"
         style={styles.image}>
-        <Typography
-          title="TO DO LISTS"
-          color="#F96332"
-          fontWeight="400"
-          fontSize={37}
-          textAlign="center"
-        />
+        <View style={styles.centerImg}>
+          <Image
+            resizeMode="cover"
+            source={require('../images/now-logo.png')}
+          />
+        </View>
+        <View style={styles.typo}>
+          <Typography
+            title="News Time App"
+            color="white"
+            fontWeight="400"
+            fontSize={40}
+            textAlign="center"
+          />
+        </View>
+        <View style={styles.centerImg}>
+          <Image
+            resizeMode="cover"
+            source={require('../images/designBy.png')}
+          />
+        </View>
+        <View style={styles.stylesLogo}>
+          <Image resizeMode="cover" source={require('../images/logos.png')} />
+        </View>
         <View style={styles.stylesBtn}>
           <ButtonCustom
             labelBtn="GET STARTED"
@@ -42,10 +57,28 @@ const styles = StyleSheet.create({
   image: {
     flex: 1,
     padding: 24,
-    justifyContent: 'center',
   },
   stylesBtn: {
-    marginTop: 130,
+    marginTop: 10,
+  },
+  stylesLogo: {
+    marginTop: 100,
+    width: '100%',
+    display: 'flex',
+    justifyContent: 'center',
+    flexDirection: 'row',
+    marginBottom: 20,
+  },
+  centerImg: {
+    width: '100%',
+    display: 'flex',
+    justifyContent: 'center',
+    flexDirection: 'row',
+    marginTop: 20,
+    marginBottom: 20,
+  },
+  typo: {
+    marginTop: 100,
   },
 });
 
