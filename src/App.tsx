@@ -1,9 +1,10 @@
 import React from 'react';
-import Login from './components/templates/Login';
+// import Login from './components/templates/Login';
+import WelcomePage from './pages/welcome';
 const App = () => {
   return (
     <>
-      <Login />
+      <WelcomePage />
     </>
   );
 };
