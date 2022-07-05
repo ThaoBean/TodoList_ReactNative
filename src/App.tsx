@@ -1,9 +1,9 @@
 import React from 'react';
-import WelcomePage from './pages/welcome';
+import Login from './components/templates/Login';
 const App = () => {
   return (
     <>
-      <WelcomePage />
+      <Login />
     </>
   );
 };

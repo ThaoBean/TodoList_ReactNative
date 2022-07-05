@@ -15,7 +15,6 @@ const styles = StyleSheet.create({
     fontFamily: 'Montserrat',
   },
   sectionContainer: {
-    marginTop: 32,
     paddingHorizontal: 24,
   },
 });

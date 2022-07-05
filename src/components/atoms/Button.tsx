@@ -1,7 +1,6 @@
 import React from 'react';
 import {
   StyleSheet,
-  View,
   TouchableOpacity,
   TouchableOpacityProps,
   Text,
@@ -26,15 +25,13 @@ const ButtonCustom: React.FC<ITouchableOpacity> = ({
   color,
 }) => {
   return (
-    <View>
-      <TouchableOpacity
-        style={{backgroundColor, borderRadius, ...styles.btn}}
-        onPress={onPress}>
-        <Text style={{...styles.btnText, fontSize, fontWeight, color}}>
-          {labelBtn}
-        </Text>
-      </TouchableOpacity>
-    </View>
+    <TouchableOpacity
+      style={{backgroundColor, borderRadius, ...styles.btn}}
+      onPress={onPress}>
+      <Text style={{...styles.btnText, fontSize, fontWeight, color}}>
+        {labelBtn}
+      </Text>
+    </TouchableOpacity>
   );
 };
 
