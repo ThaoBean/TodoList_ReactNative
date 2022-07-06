@@ -108,6 +108,81 @@ const About: React.FC<IAbout> = () => {
             textAlign="center"
           />
         </View>
+        <View style={styles.styleExperience}>
+          <View style={styles.circlePink}>
+            <View style={styles.imgPink}>
+              <Image
+                resizeMode="cover"
+                source={require('../images/mobile.png')}
+              />
+            </View>
+          </View>
+        </View>
+        <View style={styles.title}>
+          <Typography
+            title="Hottest deals around the web"
+            color="#000"
+            fontWeight="700"
+            fontSize={40}
+            textAlign="center"
+          />
+        </View>
+        <View style={styles.title}>
+          <Typography
+            title="Find the perfect gift or everyday goods right at your fingertips."
+            color="#737373"
+            fontWeight="500"
+            fontSize={24}
+            textAlign="center"
+          />
+        </View>
+        <View style={styles.products}>
+          <View style={styles.deco1}>
+            <Image resizeMode="cover" source={require('../images/Saly1.png')} />
+          </View>
+          <View style={styles.deco2}>
+            <Image resizeMode="cover" source={require('../images/Saly2.png')} />
+          </View>
+          <View style={styles.wrapImg1}>
+            <Image
+              resizeMode="cover"
+              source={require('../images/mobile2.png')}
+            />
+          </View>
+        </View>
+        <View style={styles.saveTime}>
+          <View style={styles.title}>
+            <Typography
+              title="Save time & money with exclusive offers from top stores"
+              color="#5956E9"
+              fontWeight="700"
+              fontSize={40}
+              textAlign="center"
+            />
+          </View>
+          <View style={styles.wrapImg2}>
+            <Image resizeMode="cover" source={require('../images/Saly3.png')} />
+          </View>
+        </View>
+        <Typography
+          title="Hey! Follow us on social media so you don’t miss any offer."
+          color="#000"
+          fontWeight="700"
+          fontSize={40}
+          textAlign="center"
+        />
+        <View style={styles.wrapImg1}>
+          <Image resizeMode="cover" source={require('../images/Saly4.png')} />
+        </View>
+        <View style={{paddingBottom: 20}}>
+          <Typography
+            title="Copywright 2021 website.com"
+            color="#000000"
+            fontWeight="700"
+            fontSize={15}
+            textAlign="center"
+          />
+        </View>
       </ScrollView>
     </SafeAreaView>
   );
@@ -149,6 +224,51 @@ const styles = StyleSheet.create({
     padding: 10,
     backgroundColor: '#DCDEFE',
     borderRadius: 34,
+    display: 'flex',
+    justifyContent: 'center',
+    flexDirection: 'row',
+  },
+  styleExperience: {
+    width: '100%',
+    paddingLeft: 20,
+    paddingRight: 20,
+    marginTop: 100,
+    marginBottom: 100,
+  },
+  circlePink: {
+    position: 'relative',
+    width: 356,
+    height: 356,
+    borderRadius: 356,
+    backgroundColor: '#FAB8C3',
+    display: 'flex',
+    justifyContent: 'center',
+    flexDirection: 'row',
+  },
+  imgPink: {
+    position: 'absolute',
+    top: -81,
+  },
+  products: {
+    position: 'relative',
+  },
+  deco1: {
+    position: 'absolute',
+    bottom: 0,
+    left: 0,
+  },
+  deco2: {
+    position: 'absolute',
+    top: 0,
+    right: 0,
+  },
+  saveTime: {
+    marginTop: 100,
+    backgroundColor: '#FAB8C5',
+    marginBottom: 100,
+  },
+  wrapImg2: {
+    marginTop: -50,
     display: 'flex',
     justifyContent: 'center',
     flexDirection: 'row',
