@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
   },
   btnText: {
     fontFamily: 'Montserrat',
-    lineHeight: 50,
+    lineHeight: 60,
     textAlign: 'center',
   },
 });
