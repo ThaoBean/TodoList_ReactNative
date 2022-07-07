@@ -1,11 +1,9 @@
 import React from 'react';
-import About from './pages/about';
-// import Login from './components/templates/Login';
-// import WelcomePage from './pages/welcome';
+import DrawerNavigator from './components/molecules/Drawer';
 const App = () => {
   return (
     <>
-      <About />
+      <DrawerNavigator />
     </>
   );
 };

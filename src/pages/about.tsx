@@ -9,11 +9,13 @@ import {
   View,
 } from 'react-native';
 import Typography from '../components/atoms/Title';
+import {NavigationProp, useNavigation} from '@react-navigation/native';
 
 interface IAbout {}
 
 const About: React.FC<IAbout> = () => {
-  const handleCreateAccount = () => {};
+  const navigation = useNavigation<NavigationProp<any>>();
+  const handleCreateAccount = () => navigation.navigate('Register');
 
   return (
     <SafeAreaView style={styles.container}>
@@ -192,6 +194,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     paddingTop: StatusBar.currentHeight,
+    backgroundColor: '#E5E5E5',
   },
   title: {
     marginTop: 30,

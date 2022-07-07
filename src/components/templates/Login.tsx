@@ -23,7 +23,7 @@ const validateLogin = yup.object().shape({
     .required('Password is required'),
 });
 
-const Register: React.FC<ILogin> = () => {
+const Login: React.FC<ILogin> = () => {
   const data = [<Twitter />, <Google />, <Fb />];
 
   const initialValues = {
@@ -85,9 +85,9 @@ const Register: React.FC<ILogin> = () => {
                   <ButtonCustom
                     labelBtn="Login"
                     fontSize={14}
-                    backgroundColor="#F96332"
-                    borderRadius={22}
-                    fontWeight="400"
+                    backgroundColor="#5956E9"
+                    borderRadius={20}
+                    fontWeight="700"
                     color="white"
                     onPress={handleSubmit}
                   />
@@ -153,4 +153,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Register;
+export default Login;
