@@ -2,10 +2,13 @@ import React from 'react';
 import {Image, StyleSheet, View} from 'react-native';
 import ButtonCustom from '../components/atoms/Button';
 import Typography from '../components/atoms/Title';
+import {NavigationProp, useNavigation} from '@react-navigation/native';
 
 interface IWelcomePage {}
 
 const WelcomePage: React.FC<IWelcomePage> = () => {
+  const navigation = useNavigation<NavigationProp<any>>();
+
   return (
     <View style={styles.container}>
       <View style={styles.title}>
@@ -28,6 +31,7 @@ const WelcomePage: React.FC<IWelcomePage> = () => {
           fontWeight="700"
           color="#5956E9"
           borderRadius={20}
+          onPress={() => navigation.navigate('About')}
         />
       </View>
     </View>

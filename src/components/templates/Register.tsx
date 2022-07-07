@@ -108,7 +108,7 @@ const Register: React.FC<IRegister> = () => {
                   <CheckBox
                     value={isSelected}
                     onValueChange={setSelection}
-                    tintColors={{true: '#F96332'}}
+                    tintColors={{true: '#5956E9'}}
                   />
                 </View>
                 <Typography
@@ -129,9 +129,9 @@ const Register: React.FC<IRegister> = () => {
                   <ButtonCustom
                     labelBtn="Register"
                     fontSize={14}
-                    backgroundColor="#F96332"
-                    borderRadius={22}
-                    fontWeight="400"
+                    backgroundColor="#5956E9"
+                    borderRadius={20}
+                    fontWeight="700"
                     color="white"
                     onPress={handleSubmit}
                   />

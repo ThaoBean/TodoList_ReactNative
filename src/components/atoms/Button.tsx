@@ -13,6 +13,7 @@ interface ITouchableOpacity extends TouchableOpacityProps {
   fontWeight: any;
   color: string;
   borderRadius?: number;
+  lineHeight?: number;
 }
 
 const ButtonCustom: React.FC<ITouchableOpacity> = ({
@@ -23,12 +24,14 @@ const ButtonCustom: React.FC<ITouchableOpacity> = ({
   borderRadius,
   fontWeight,
   color,
+  lineHeight = 50,
 }) => {
   return (
     <TouchableOpacity
       style={{backgroundColor, borderRadius, ...styles.btn}}
       onPress={onPress}>
-      <Text style={{...styles.btnText, fontSize, fontWeight, color}}>
+      <Text
+        style={{...styles.btnText, fontSize, fontWeight, color, lineHeight}}>
         {labelBtn}
       </Text>
     </TouchableOpacity>
@@ -41,7 +44,6 @@ const styles = StyleSheet.create({
   },
   btnText: {
     fontFamily: 'Montserrat',
-    lineHeight: 60,
     textAlign: 'center',
   },
 });
